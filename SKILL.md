@@ -6,6 +6,11 @@ name: tt-hook
 description: "TikTok文案钩子语料库（只读）：关键词搜视频、博主作品、视频评论，输出 JSON，不登录不发布。触发词：TikTok、tiktok、抖音国际版、TikTok搜索、TikTok评论、TikTok博主。用户要查 TikTok 视频、评论、爆款选题、竞品监控、KOL 筛选或评论舆情时使用；抖音、小红书、快手、B站、微博、公众号不要用本技能。"
 license: MIT
 version: 1.1.3
+display_name: "TikTok文案钩子｜爆款标题·开头3秒·口播脚本·语料复用"
+display_name_en: "TikTok Hook"
+description_zh: "TikTok文案钩子语料库（只读，不登录你的 TikTok 账号，不发布不点赞不评论，无风控封号风险）：把公开视频的标题文案、评论区高赞话术、博主历史作品批量取回，统一输出结构化 JSON，可直接交给 AI 做标题模板复用、开头 3 秒钩子拆解、口播脚本改写与语料库沉淀。\n\n三类取数能力：①关键词搜视频，支持相关度/最多点赞排序与多档时间窗筛选；②博主作品抓取，按最新或最热排序，批量拉取主页公开作品看内容策略与更新节奏；③单条视频评论抓取，归集高赞话术与用户原话做痛点挖掘。\n\n钩子打法：用最多点赞排序找高赞开头，从评论捞用户原话与痛点，用最近时间窗定当日选题。\n\n规模：按量 Token 单次最多 10000 条；包月搜索 ≤30、作品 ≤30、评论 ≤40，超限返回 PLAN_LIMIT（退出码 1），不要当网络错误同参重试。仅需 Node.js 16.14+ 与 GUAIKEI_API_TOKEN，零第三方依赖。"
+description_en: "Read-only TikTok copywriting-hook corpus, no login, no ban risk. Pull public captions, top-comment phrasing and creator post history in bulk as structured JSON, so AI can reuse title templates, deconstruct the first-3-second hook and rewrite spoken scripts.\n\nThree capabilities: 1) Keyword search over videos, sorted by relevance or most liked, with time-window filters. 2) Creator post listing sorted by newest or hottest, batch pulling public posts to study content strategy and posting cadence. 3) Comment scraping on one video to harvest high-like phrasing and user pain points.\n\nHook playbook: sort by most liked for strong openings, mine comments for original wording, use recent time windows to pick daily topics.\n\nScale: pay-as-you-go up to 10,000 items per call; monthly caps search 30, posts 30, comments 40, then PLAN_LIMIT (exit 1) - not a network error, do not retry. Needs Node.js 16.14+ and GUAIKEI_API_TOKEN, zero deps."
+author: "新郑市怪奇信息技术工作室"
 metadata:
   openclaw:
     emoji: "🎵"
